@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rushikesh portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: rgb(2, 2, 53);
+            color: white;
+        }
+
+        nav {
+            background: rgb(1, 1, 97);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            display: flex;
+            justify-content: none;
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        ul li a:hover {
+            color: yellow;
+            font-size: 1.2rem;
+        }
+
+        main hr {
+            border: 0px;
+            background-color: rgb(56, 40, 99);
+            height: 1px;
+            margin: 48px 84px;
+        }
+
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 140px 0 0;
+
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+
+            font-size: 3rem;
+
+        }
+
+        .leftsection .button {}
+
+        .leftsection .btn {
+            padding: 12px;
+            background-color: #131345;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .rightsection img {
+            width: 80%;
+
+        }
+
+        .purple {
+            color: purple;
+        }
+
+        .grey {
+            color: gray;
+        }
+
+        #element {
+            color: purple;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: 0 auto;
+            /* Remove top margin to avoid extra space */
+            padding-top: 100px;
+
+        }
+
+        .secondsection .box {
+            width: 80vw;
+            height: 1px;
+            background: white;
+            margin: 56px 0;
+            display: flex;
+
+        }
+
+
+        .secondsection .vertical {
+            width: 1px;
+            height: 80px;
+            background: white;
+            margin: 0 130px;
+
+
+
+        }
+
+        .image-top {
+            width: 34px;
+            position: relative;
+            left: -14px;
+            top: -36px;
+        }
+
+        .title {
+            width: 168px;
+            position: relative;
+            font-size: 1.2rem;
+            left: -61px;
+            top: 33px;
+        }
+
+        .title-desc {
+            width: 180px;
+            font-size: 13px;
+            position: relative;
+            left: -66px;
+            top: 36px;
+            color: grey;
+        }
+        #particles-js {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                /* Ensure particles are behind other content */
+            }
+
+        @media screen and (max-width: 1400px) {
+
+            .firstsection {
+                flex-direction: column-reverse;
+            }
+
+            .box {
+                flex-direction: column;
+
+            }
+
+            .secondsection .vertical {
+                height: unset;
+            }
+
+            .title,
+            .title-desc {
+                left: 45px;
+            }
+
+            .secondsection .box {
+                width: 50vw;
+            }
+
+            .leftsection {
+                flex-direction: column;
+                width: 100% !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .rightsection {
+                width: 721px !important;
+                display: flex;
+                justify-content: center;
+            }
+
+            .rightsection img {
+                width: 45vw;
+                margin-bottom: 73px;
+            }
+
+            .image-top {
+                top: 70px;
+            }
+
+           
+
+            body {
+                min-width: fit-content;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+
+        }
+
+
+        /* nav ul li:hover{
+            color: yellow;
+            display: block;
+        } */
+    </style>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <nav>
+            <div class="left">Rushikesh portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">home</a></li>
+                    <li><a href="/">about</a></li>
+                    <li><a href="/">projects</a></li>
+                    <li><a href="/">contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <div>Hi, My name is <span class="purple">RUSHI</span>,</div>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="button">
+                    <a href="www.linkedin.com/in/rushikesh-mule-33ba05228"><button class="btn">visit
+                            linkedin</button></a>
+                    <a href="https://github.com/"><button class="btn">visit github</button></a>
+                </div>
+            </div>
+
+            <div class="rightsection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="grey">What I have done so far</span>
+            <h1>skills</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img src="c++.png" alt="" class="image-top">
+                    <div class="title">C++ programmer</div>
+                    <div class="title-desc">
+                        Proficient C++ Programmer with a keen understanding of software development principles and a
+                        proven track record of creating efficient, reliable, and maintainable code. Equipped with a
+                        comprehensive grasp of C++ syntax, data structures, algorithms, and object-oriented programming
+                        concepts. Experienced in developing applications ranging from system-level software to graphical
+                        user interfaces, demonstrating the ability to adapt to diverse project requirements</div>
+                </div>
+                <div class="vertical">
+                    <img src="python 1.png" alt="" class="image-top">
+                    <div class="title">Python programmer</div>
+                    <div class="title-desc">
+                        Proficient in the Python programming language, encompassing a strong command of its syntax,
+                        libraries, and frameworks. Well-versed in a variety of projects, ranging from web applications
+                        to data analysis tools, showcasing adaptability to various development needs. Skilled in
+                        problem-solving, algorithmic thinking, and creating code that strikes a balance between
+                        efficiency and readability. Collaborative by nature, leveraging teamwork and best practices to
+                        deliver impactful software solutions that align with project objectives. </div>
+                </div>
+
+                <div class="vertical">
+                    <img src="web development.png" alt="" class="image-top">
+                    <div class="title">Web Developer</div>
+                    <div class="title-desc">
+                        Proficient in HTML, CSS, and JavaScript, with a keen eye for design aesthetics and a passion for
+                        interactive and responsive web development. Combining technical skills with a creative mindset
+                        to bring digital designs to life, ensuring seamless functionality and optimal user engagement.
+                        Adept at translating design mockups into clean, well-structured code while optimizing for
+                        performance and cross-browser compatibility.</div>
+                </div>
+                <div class="vertical">
+                    <img src="data analyst.png" alt="" class="image-top">
+                    <div class="title">Data analysis</div>
+                    <div class="title-desc">
+                        Skilled Data Analyst with a strong foundation in extracting meaningful insights from complex
+                        datasets. Proficient in using various tools and programming languages, including Python, R, and
+                        SQL.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "path/to/your/image.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+
+            "interactivity": {
+                "detect_on": "window",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['C++ programmer', 'student', 'python programmer', 'dsa problem solver', 'web developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
